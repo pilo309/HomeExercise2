@@ -23,14 +23,14 @@ int main (void)
 
 	do
 	{
-		printf_s("Enter number to be factorized:\n");
+		printf_s("Enter number to be factorized:\n");				//scanner nummer der skal faktoriseres
 		scanf_s("%d", &number);
 
-	} while (number <= 0);
+	} while (number <= 0);											// går først videre når betingelse er opfyldt
 
-	while (counter <= number)
+	while (counter <= number)                   //fortsætter så længe counter er mindre end nummer
 		{
-		factorial *= counter;
+		factorial *= counter;					//ganger hver gang factorial med counter en højere indtil den når number
 			counter++;
 		}
 
